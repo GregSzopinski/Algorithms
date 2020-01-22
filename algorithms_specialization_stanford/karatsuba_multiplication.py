@@ -1,6 +1,6 @@
 def karatsuba(x: int, y: int):
     """
-    Alogrithm to multiply two given integers, denoted x and y.
+    Algorithm to multiply two given integers, denoted x and y.
     More effective than regular, elementary school multiplication.
     If you're using python 3.7+, specify input type.
     :param x: simply our first number. It should be an int.
