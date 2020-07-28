@@ -6,7 +6,7 @@ def merge_sort(x: list):
     print("Splitting... ", x)
     if len(x) <= 1:
         # if a list is empty or have length of one, return it as it is.
-        print("Single number. Moving on... ")
+        print("Single number or an empty array. Moving on... ")
     else:
         # splitting step
         middle: int = len(x) // 2
@@ -39,8 +39,4 @@ def merge_sort(x: list):
             k += 1
 
     print("Merging... ", x)
-
-
-# test
-print(merge_sort([5, 1, 3.3, 2.1, 1.1, 6, 4]))
-print(merge_sort([2, 1, 3, 1, 4, 5, 6, 1, 8, 99, 37, 101, 12, 9.9]))
+    return x
