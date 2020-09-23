@@ -1,4 +1,8 @@
 def count_good_pairs(nums: list) -> int:
+    """
+    An alternative solution to leetcode's good pairs problem
+    https://leetcode.com/problems/number-of-good-pairs/
+    """
     hash_map = {}
     res = 0
 
