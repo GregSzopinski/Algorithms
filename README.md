@@ -12,4 +12,6 @@ Implementation of other popular algorithms. I try to mention source I draw inspi
 * insertion sort
 * finding nth element of Fibonacci sequence
 * word break
+* two sum
+* good pairs
 
