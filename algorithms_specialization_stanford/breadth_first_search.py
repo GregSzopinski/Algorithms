@@ -8,8 +8,8 @@ example_graph.add_edge('s', 'a')
 example_graph.add_edge('s', 'b')
 example_graph.add_edge('a', 'c')
 example_graph.add_edge('b', 'c')
-example_graph.add_edge('c', 'e')
 example_graph.add_edge('c', 'd')
+example_graph.add_edge('c', 'e')
 example_graph.add_edge('d', 'e')
 
 # todo: BFS implementation
