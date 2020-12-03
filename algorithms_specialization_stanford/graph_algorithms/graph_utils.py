@@ -41,7 +41,7 @@ class Graph:
 
 
 def example_graph_823():
-    # Example 8.2.3 from Algorithms Illuminated Part 2 - undirected graph with six vertices
+    """Example 8.2.3 from Algorithms Illuminated Part 2 - undirected graph with six vertices"""
     example_graph = Graph({"s": "s", "a": "a", "b": "b", "c": "c", "d": "d", "e": "e"})
     example_graph.add_edge("s", "a")
     example_graph.add_edge("s", "b")
