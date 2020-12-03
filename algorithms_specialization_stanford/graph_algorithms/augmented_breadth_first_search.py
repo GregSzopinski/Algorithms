@@ -16,16 +16,16 @@ def augmented_bfs(graph, starting_vertex):
         vertex: 0 if vertex == starting_vertex else float("inf")
         for vertex in graph.vertices
     }
-    q = Queue()
-    q.put(starting_vertex)
+    queue_to_explore = Queue()
+    queue_to_explore.put(starting_vertex)
 
-    while not q.empty():
-        v = q.get()
-        for endpoint in graph.adj_list[v]:
-            if endpoint not in explored:
-                explored.append(endpoint)
-                shortest_paths[endpoint] = shortest_paths[v] + 1
-                q.put(endpoint)
+    while not queue_to_explore.empty():
+        v = queue_to_explore.get()
+        for w in graph.adj_list[v]:
+            if w not in explored:
+                explored.append(w)
+                shortest_paths[w] = shortest_paths[v] + 1
+                queue_to_explore.put(w)
 
     return shortest_paths
 
