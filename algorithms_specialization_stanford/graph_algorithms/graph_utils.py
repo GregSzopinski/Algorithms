@@ -38,3 +38,16 @@ def example_graph() -> object:
         graph.add_edge(u, v)
     graph.print_adj_list()
     graph.degree("A")
+
+
+def example_graph_823():
+    # Example 8.2.3 from Algorithms Illuminated Part 2 - undirected graph with six vertices
+    example_graph = Graph(["s", "a", "b", "c", "d", "e"])
+    example_graph.add_edge("s", "a")
+    example_graph.add_edge("s", "b")
+    example_graph.add_edge("a", "c")
+    example_graph.add_edge("b", "c")
+    example_graph.add_edge("c", "d")
+    example_graph.add_edge("c", "e")
+    example_graph.add_edge("d", "e")
+    return example_graph
